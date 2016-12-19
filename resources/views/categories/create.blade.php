@@ -10,9 +10,10 @@
 
     @include('categories._form')
 
-    <div class="form-group">
+    {!! Html::openFormGroup() !!}
+    	{!! Button::primary('Criar categoria')->submit() !!}
     	{!! Form::submit('Criar categoria', ['class'=>'btn btn-primary']) !!}
-    </div>
+    {!! Html::closeFormGroup() !!}
 
     {!! Form::close() !!}
 
